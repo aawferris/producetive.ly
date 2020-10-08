@@ -6,7 +6,7 @@ Productive.ly
 
 ## Project Description
 
-Here at Productive.ly, we strive to help our customers experience their carpe diem. Our newest innovation, never before seen on the face of the planet, is hand-crafted to increase your optimum efficiency as you strive to carpe diem.
+At Ferrous-Clad, we strive to help our customers experience their carpe diem. Our newest innovation, Productive.ly, will help the focused become more focused, the driven to become more driven and the productive to reach the upper echelons of their potential. Productive.ly is a productivity app with robust features which include a focus timer, a quick task list, a note storage and a built-in break button to help ease your tension throughout your busy day. Are you ready to carpe diem?
 
 ## Wireframes
 
@@ -28,13 +28,14 @@ Click here to see: https://drive.google.com/file/d/1F9tw_NnB65DjAbCxfqP0z_T-Sx1w
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
-Productive.ly utilizes AirTable for users to add data.
+I will use airtable for users to add data to. Once the user uploads their name, Productive.ly will make an API call to display their name.
+https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047c8324efcf17a6776b347db7d2717d3bd2bebd58fe8de728bbc260
 
 ### MVP/PostMVP
 
 #### MVP
 
+- Render a "Hello {user.name}" feature will will take an input from the user and then return the data from the AP22
 - Render a timer on screen that allows users to input a time
 - Render a task list that allows users to add and remove list items
 - Render a text area for notes that a user can add notes to
@@ -55,27 +56,38 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Day     | Deliverable                                        | Status     |
+| ------- | -------------------------------------------------- | ---------- |
+| Oct. 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| Oct. 9  | Project Approval / HTML / Basic CSS                | Incomplete |
+| Oct. 11 | Pseudocode / Create Component Basic Structure      | Incomplete |
+| Oct. 12 | Component structure / Connect API POST methods     | Incomplete |
+| Oct. 13 | Fully functional app / More advanced styling       | Incomplete |
+| Oct. 14 | MVP Fully complete / perfect styling               | Incomplete |
+| Oct. 15 | Post MVPs                                          | Incomplete |
+| Oct. 16 | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component    | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------ | :------: | :------------: | :-----------: | :---------: |
+| HTML         |    M     |      1hrs      |     -----     |    -----    |
+| Basic CSS    |    M     |      3hrs      |     -----     |    -----    |
+| App.jsx      |    M     |      3hrs      |     -----     |    -----    |
+| Name.jsx     |    M     |      3hrs      |     -----     |    -----    |
+| Focus.jsx    |    M     |      3hrs      |     -----     |    -----    |
+| Break.jsx    |    M     |      3hrs      |     -----     |    -----    |
+| Tasks.jsx    |    M     |      3hrs      |     -----     |    -----    |
+| Notes.jsx    |    M     |      3hrs      |     -----     |    -----    |
+| Setup API DB |    M     |      3hrs      |     -----     |    -----    |
+| API Calls    |    M     |      3hrs      |     -----     |    -----    |
+| Rendering    |    M     |      3hrs      |     -----     |    -----    |
+| Advanced CSS |    M     |      3hrs      |     -----     |    -----    |
+| Polishing    |    M     |      3hrs      |     -----     |    -----    |
+| Debugging    |    M     |      3hrs      |     -----     |    -----    |
+| Research     |    M     |      3hrs      |     -----     |    -----    |
+| PostMVP      |    M     |      3hrs      |     -----     |    -----    |
+| Total        |    H     |     45hrs      |     -----     |    -----    |
 
 ## SWOT Analysis
 
