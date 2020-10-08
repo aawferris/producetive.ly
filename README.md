@@ -2,11 +2,11 @@
 
 ## Project Name
 
-The name of your project.
+Productive.ly
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Here at Productive.ly, we strive to help our customers experience their carpe diem. Our newest innovation, never before seen on the face of the planet, is hand-crafted to increase your optimum efficiency as you strive to carpe diem.
 
 ## Wireframes
 
@@ -19,6 +19,7 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+Productive.ly utilizes AirTable for users to add data.
 
 ### MVP/PostMVP
 
@@ -26,18 +27,19 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP
 
-_These are examples only. Replace with your own MVP features._
-
-- Find and use external api
-- Render data on page
-- Allow user to choose favorites
+- Render a timer on screen that allows users to input a time
+- Render a task list that allows users to add and remove list items
+- Render a text area for notes that a user can add notes to
+- Render a "take a break" button that takes user to a fun, upbeat video (OR stretching video)
+- Connect Airtable API to the task list
+- Connect Airtable to the notes
 
 #### PostMVP
 
-_These are examples only. Replace with your own Post-MVP features._
-
-- Add second API
-- Use local storage to save user favorites
+- Render a weather display that shows the current forecast
+- Render a Google Search bar that is active
+- Render an inspirational quote from a secondary API
+- Focus timer has an option to display time remaining in a percentage
 
 ## Project Schedule
 
