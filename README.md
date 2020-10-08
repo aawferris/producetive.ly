@@ -10,11 +10,21 @@ Here at Productive.ly, we strive to help our customers experience their carpe di
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+Desktop Version
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4acf2CSmw9ifDLCrxK4euB%2FProductive.ly&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+Tablet Version
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJNkSr9g0IeDbQO2LXiCc8D%2FProductive.ly-Tablet&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+Mobile Version
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVfNGHv9x6tRB99LxgaHfvI%2FProductive.ly-iPhone&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+<iframe frameborder="0" style="width:100%;height:154px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1F9tw_NnB65DjAbCxfqP0z_T-Sx1w8R_X"></iframe>
 
 ## API and Data Sample
 
@@ -22,8 +32,6 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 Productive.ly utilizes AirTable for users to add data.
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
 #### MVP
 
