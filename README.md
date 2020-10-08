@@ -11,20 +11,20 @@ Here at Productive.ly, we strive to help our customers experience their carpe di
 ## Wireframes
 
 Desktop Version
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4acf2CSmw9ifDLCrxK4euB%2FProductive.ly&chrome=DOCUMENTATION" allowfullscreen></iframe>
+Click here to see: https://www.figma.com/file/4acf2CSmw9ifDLCrxK4euB/Productive.ly
+![Desktop View](https://www.figma.com/file/4acf2CSmw9ifDLCrxK4euB/Productive.ly)
 
 Tablet Version
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJNkSr9g0IeDbQO2LXiCc8D%2FProductive.ly-Tablet&chrome=DOCUMENTATION" allowfullscreen></iframe>
+Click here to see: https://www.figma.com/file/JNkSr9g0IeDbQO2LXiCc8D/Productive.ly-Tablet
+![Tablet View](https://www.figma.com/file/JNkSr9g0IeDbQO2LXiCc8D/Productive.ly-Tablet)
 
 Mobile Version
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVfNGHv9x6tRB99LxgaHfvI%2FProductive.ly-iPhone&chrome=DOCUMENTATION" allowfullscreen></iframe>
+Click here to see: https://www.figma.com/file/VfNGHv9x6tRB99LxgaHfvI/Productive.ly-iPhone
+![Mobile View](https://www.figma.com/file/VfNGHv9x6tRB99LxgaHfvI/Productive.ly-iPhone)
 
 ## Component Hierarchy
 
-<iframe frameborder="0" style="width:100%;height:154px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G1F9tw_NnB65DjAbCxfqP0z_T-Sx1w8R_X"></iframe>
+Click here to see: https://drive.google.com/file/d/1F9tw_NnB65DjAbCxfqP0z_T-Sx1w8R_X/view?usp=sharing
 
 ## API and Data Sample
 
