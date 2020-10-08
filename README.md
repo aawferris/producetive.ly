@@ -52,10 +52,6 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 | Day     | Deliverable                                        | Status     |
 | ------- | -------------------------------------------------- | ---------- |
 | Oct. 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
@@ -84,17 +80,38 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Rendering    |    M     |      3hrs      |     -----     |    -----    |
 | Advanced CSS |    M     |      3hrs      |     -----     |    -----    |
 | Polishing    |    M     |      3hrs      |     -----     |    -----    |
+| Deployment   |    M     |      1hrs      |     -----     |    -----    |
 | Debugging    |    M     |      3hrs      |     -----     |    -----    |
 | Research     |    M     |      3hrs      |     -----     |    -----    |
 | PostMVP      |    M     |      3hrs      |     -----     |    -----    |
-| Total        |    H     |     45hrs      |     -----     |    -----    |
+| Total        |    H     |     46hrs      |     -----     |    -----    |
 
 ## SWOT Analysis
 
+Link to a visual: https://drive.google.com/file/d/1QWMa7QawqCwcmTji5AyeoCRuymG57psh/view?usp=sharing
+
 ### Strengths:
+
+- HTML
+- CSS
+- Making API Calls
+- Basic class component structure
 
 ### Weaknesses:
 
+- Difficulty in recognizing aspects of JSX structure
+- Getting stuck in my own head
+- Making a ternary button
+- Sending, then receiving and API call back to back (never done this before)
+
 ### Opportunities:
 
+- Get better at class components
+- Learn useEffect/State at an operational level
+- Leverage classmates’ wisdom
+- Leverage outside sources
+- Create an app I would want to use
+
 ### Threats:
+
+- Not reaching out for help soon enough! (NO TOKENS!)
