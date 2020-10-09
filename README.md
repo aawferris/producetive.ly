@@ -64,7 +64,6 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 
 #### MVP
 
-- Render a "Hello {user.name}" feature will will take an input from the user and then return the data from the AP22
 - Render a timer on screen that allows users to input a time
 - Render a task list that allows users to add and remove list items
 - Render a text area for notes that a user can add notes to
@@ -74,6 +73,7 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 
 #### PostMVP
 
+- Render a "Hello {user.name}" feature will will take an input from the user and then return the data from the API
 - Render a weather display that shows the current forecast
 - Render a Google Search bar that is active
 - Render an inspirational quote from a secondary API
