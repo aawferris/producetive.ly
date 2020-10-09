@@ -31,6 +31,35 @@ Click here to see: https://drive.google.com/file/d/1K9OeIURwTwvNm9sO-ydHgsfPhTrG
 I will use airtable for users to add data to. Once the user uploads their name, Productive.ly will make an API call to display their name.
 https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047c8324efcf17a6776b347db7d2717d3bd2bebd58fe8de728bbc260
 
+```
+{
+    "records": [
+        {
+            "id": "recAlUK66VcputfQJ",
+            "fields": {
+                "Status": "2020-10-08T21:16:55.000Z"
+            },
+            "createdTime": "2020-10-08T21:16:55.000Z"
+        },
+        {
+            "id": "rec1FfTe8Fvl0y4ZQ",
+            "fields": {
+                "Status": "2020-10-08T21:16:55.000Z"
+            },
+            "createdTime": "2020-10-08T21:16:55.000Z"
+        },
+        {
+            "id": "recMtZiFWJopAta0t",
+            "fields": {
+                "Status": "2020-10-08T21:16:55.000Z"
+            },
+            "createdTime": "2020-10-08T21:16:55.000Z"
+        }
+    ],
+    "offset": "recMtZiFWJopAta0t"
+}
+```
+
 ### MVP/PostMVP
 
 #### MVP
