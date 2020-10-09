@@ -55,7 +55,7 @@ function FocusTimer() {
           <label htmlFor='user-time'>Time</label>
           <input
             name="user-time"
-            type="number" // build something to handle time formatting (if user-time > 59 ? {render time in hours, minutes, seconds} : {render time in seconds})
+            type="range" min='0' max='120' step='any' value="120" // build something to handle time formatting (if user-time > 59 ? {render time in hours, minutes, seconds} : {render time in seconds})
             value='user-input'
             onChange={(event) => setSeconds(event.target.value)}
           />
