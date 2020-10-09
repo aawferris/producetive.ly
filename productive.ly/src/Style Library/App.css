@@ -2,11 +2,26 @@
   font-family: "Commissioner", sans-serif;
   display: flex;
   flex-direction: column;
+  margin-top: 15%;
   border: 1px dashed gray;
+}
+
+body {
+  /* background-image: url(https://source.unsplash.com/random); */
+  /* filter: brightness(60%);
+  z-index: auto; */
+  /* color: white; */
 }
 
 header {
   margin: 0 auto;
+  text-align: center;
+}
+
+.countdown-container {
+  border: 1px solid magenta;
+  margin: 0 auto;
+  width: 500px;
   text-align: center;
 }
 
