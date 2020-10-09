@@ -1,0 +1,58 @@
+#root {
+  font-family: "Commissioner", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed gray;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timer-container {
+  border: 2px solid green;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo-container {
+  border: 1px solid red;
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo {
+  /* border: 1px solid black; */
+}
+
+.task-list {
+  /* border: 2px solid blue; */
+}
+
+.notes-container {
+  display: flex;
+  border: 2px solid blue;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notes-container > h4 {
+  order: -1;
+}
+
+.notes-container > form {
+  order: 0;
+}
+
+.notes-container > #subject {
+  order: 1;
+}
+
+.notes-container > #note {
+  order: 2;
+}
