@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-// import {Link, Route, Switch} from 'react-router-dom'
-import './App.css';
-// import FocusTimer from './FocusTimer';
-import Countdown from './Countdown'
-import Notes from './Notes';
-import Tasks from './Tasks';
-import Welcome from './Welcome'
+import React, { Component } from "react";
+import "./App.css";
+
+import Countdown from "./Component Library/Countdown";
+import FocusTimer from "./Component Library/FocusTimer";
+import Notes from "./Component Library/Notes";
+import Tasks from "./Tasks";
+import Welcome from "./Component Library/Welcome";
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <Welcome />
-        <Countdown/>
-        {/* <FocusTimer/> */}
+        <Countdown />
+        <FocusTimer />
         <Tasks />
         <Notes />
       </div>
-    )
+    );
   }
 }
