@@ -3,14 +3,46 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 
 // I learned about timer function from : https://yizhiyue.me/2019/12/08/how-to-create-a-simple-react-countdown-timer
+// I followed the code from: https://upmostly.com/tutorials/build-a-react-timer-component-using-hooks
 
 function FocusTimer() {
-  const [counter, setCounter] = useState(60) // so if I pass user input here, it can count down from that
+
+  const [seconds, setSeconds] = useState()
+  const [isActive, setIsActive] = useState(false)
+
+  function toggle() {
+    setIsActive(!isActive)
+  }
+
+  function reset() {
+    setSeconds(0)
+    setIsActive(false)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
 
   useEffect(() => {
-    const timer = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
-    return () => clearInterval(timer)
-  }, [counter])
+    let interval = null
+    if (isActive) {
+      interval = setInterval(() => {
+        setSeconds(seconds => seconds - 1)
+      }, 1000)
+    } else if (!isActive && seconds !== 0) {
+      clearInterval(interval)
+    }
+    return () => clearInterval(interval)
+  }, [isActive, seconds])
+
+
+  // FIRST CODE FUNCTION
+  // const [counter, setCounter] = useState(60) // so if I pass user input here, it can count down from that
+
+  // useEffect(() => {
+  //   const timer = counter > 0 && setInterval(() => setCounter(counter - 1), 1000)
+  //   return () => clearInterval(timer)
+  // }, [counter])
 
 
   // add a conditional here that flashes when timer ends - - maybe also does a pop up
@@ -18,7 +50,41 @@ function FocusTimer() {
 
   return (
     <div className='timer-container'>
-      <p>This is a Focus Timer</p>
+      <div className='user-input-container'>
+        <form onClick={handleSubmit}>
+          <label htmlFor='user-time'>Time</label>
+          <input
+            name="user-time"
+            type="number" // build something to handle time formatting (if user-time > 59 ? {render time in hours, minutes, seconds} : {render time in seconds})
+            value='user-input'
+            onChange={(event) => setSeconds(event.target.value)}
+          />
+        </form> 
+      </div>
+      <div className='time'>
+        {seconds}s
+      </div>
+      <div className='row'>
+        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle} >
+          {isActive ? 'Pause' : 'Start'}
+        </button>
+        <button className='button' onClick={reset}>
+          Reset
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default FocusTimer
+
+// look into SVGCircle for a clean count down visual
+
+
+
+
+// FIRST CODE IN RETURN
+{/* <p>This is a Focus Timer</p>
       <div>{counter}</div>
       <form>
         <label htmlFor='user-time'>Time</label>
@@ -28,11 +94,4 @@ function FocusTimer() {
           value={counter}
           onChange={(event) => setCounter(event.target.value)}
         />
-      </form>
-    </div>
-  )
-}
-
-export default FocusTimer
-
-// look into SVGCircle for a clean count down visual
+      </form> */}

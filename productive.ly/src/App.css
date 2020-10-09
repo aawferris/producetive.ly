@@ -56,3 +56,7 @@ header {
 .notes-container > #note {
   order: 2;
 }
+
+.notes-container > button {
+  order: 3;
+}
