@@ -6,10 +6,10 @@ function Notes() {
   const [subject, setSubject] = useState('')
   const [note, setNote] = useState('')
 
-  const newNote = {
-    subject: 'does it work, though?',
-    note: 'testing 1, 2, 3'
-  }
+  // const newNote = {
+  //   subject: 'does it work, though?',
+  //   note: 'testing 1, 2, 3'
+  // }
 
   const handleSubmit = event => {
     event.preventDefault()

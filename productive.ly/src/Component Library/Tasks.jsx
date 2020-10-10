@@ -39,7 +39,7 @@ function Tasks() {
     <>
       <div className='todo-container'>
         <h5 >My Tasks</h5>
-        <div class='task-list'>
+        <div className='task-list'>
           {prevTodos.map((todo, idx) =>
             <ToDo
               task={todo.task}
