@@ -15,15 +15,15 @@ function WelcomeGet() {
           Authorization: `Bearer ${key}`
         }
       })
-      console.log(response.data.records);
-      setName(response.data.records)
+      console.log(response.data.records[0].fields.name);
+      setName(response.data.records[0].fields.name)
     }
     getIndex()
   }, [])
 
   return (
     <div className='welcome-get'>
-      <p>Get Name</p>
+      <p>Get Name: {setName.name}</p>
     </div>
   )
 }

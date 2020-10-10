@@ -27,7 +27,7 @@ function WelcomePost(props) {
   return (
     <div className='welcome-container'>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='name'>What's your name?</label>
+        <label htmlFor='name'>Post Name</label>
         <input
           type='text'
           value={name}
