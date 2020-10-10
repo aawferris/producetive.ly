@@ -1,29 +1,23 @@
 import React from 'react'
-import axios from 'axios'
-import { Component } from 'react'
 
-class BackGround extends Component {
-  constructor() {
-    super();
-    this.state = {
-      image: [],
-    }
+
+function BackGround(props) {
+  let backgroundStyle = {
+    background: `url(${props.image})`,
+    backgroundSize: "cover",
   }
 
-  async getImage() {
-    const response = await axios.get('https://api.unsplash.com/photos/random/REACT_APP_UNSPLASH_SECRET_KEY/')
-    console.log(response.data);
-  }
-
-  async componentDidMount() {
-    await this.getImage
-  }
-
-  render() {
-    return (
-      <p>This shows up</p>
-    )
-  }
+  return (
+    <>
+      <div className='background-image'>
+        <img
+          src={props.image}
+          alt='random nature background prom pixelbay.com'
+          style={backgroundStyle}
+        />
+      </div>
+    </>
+  )
 }
 
 export default BackGround

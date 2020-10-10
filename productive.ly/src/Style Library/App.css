@@ -4,13 +4,11 @@
   flex-direction: column;
   margin-top: 15%;
   border: 1px dashed gray;
-}
-
-body {
-  /* background-image: url(https://source.unsplash.com/random); */
-  /* filter: brightness(60%);
-  z-index: auto; */
   /* color: white; */
+  font-weight: 500;
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 header {
@@ -74,4 +72,18 @@ header {
 
 .notes-container > button {
   order: 3;
+}
+
+.welcome-container {
+  border: 1px solid orange;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-get {
+  border: 1px solid darkorange;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }

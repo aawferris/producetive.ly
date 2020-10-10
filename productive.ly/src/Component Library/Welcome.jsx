@@ -4,7 +4,7 @@ import React from 'react'
 function Welcome(props) {
   return (
     <>
-      <div>
+      <div className='welcome-display'>
         <p>{props.name}</p>
       </div>
     </>

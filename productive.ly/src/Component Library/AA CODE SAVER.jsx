@@ -6,3 +6,9 @@ Refresh = async () => {
   const refresh = () => {
     setValue({})
   }
+
+//maybe can use to handle a reset of form
+{ onReset }
+
+//maybe can use for search bar postMVP
+{ onSearch }
