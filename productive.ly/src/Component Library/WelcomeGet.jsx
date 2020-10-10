@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Welcome from './Welcome'
-const base = 'appcOGu210QwlpPrS'
-const key = 'key2RkJg1LGnTwi0H'
 
 
 function WelcomeGet() {
