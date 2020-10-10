@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Welcome from './Welcome'
+import userEvent from '@testing-library/user-event'
 const base = 'appcOGu210QwlpPrS'
 const key = 'key2RkJg1LGnTwi0H'
 
@@ -23,7 +25,9 @@ function WelcomeGet() {
 
   return (
     <div className='welcome-get'>
-      <p>Get Name: {setName.name}</p>
+      <Welcome
+        name={name}
+      />
     </div>
   )
 }
