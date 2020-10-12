@@ -21,9 +21,16 @@ function WelcomePost() {
     )
   }
 
+  // setInterval((handleRefresh) => {
+  //   function handleRefresh() {
+  //     return window.location.href
+  //   }
+  //   handleRefresh()
+  // }, 1000);onSubmit={setInterval}
+
   return (
     <div className='welcome-container'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <label htmlFor='name'>Post</label>
         <input
           type='text'
