@@ -19,8 +19,8 @@ export default class App extends Component {
         <WelcomePost />
         <Countdown />
         <Tasks />
-        <NotesPost />
         <NotesGet />
+        <NotesPost />
         <BreakButton />
       </div>
     );

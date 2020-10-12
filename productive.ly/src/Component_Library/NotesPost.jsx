@@ -7,10 +7,10 @@ function Notes() {
   const [subject, setSubject] = useState('')
   const [note, setNote] = useState('')
 
-  const newNote = {
-    subject: 'does it work, though?',
-    note: 'testing 1, 2, 3'
-  }
+  // const newNote = {
+  //   subject: 'does it work, though?',
+  //   note: 'testing 1, 2, 3'
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -18,9 +18,6 @@ function Notes() {
       subject,
       note,
     }
-    setNotes(...notes, fields)
-    setSubject('')
-    setNote('')
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/notes`
     await axios.post(
       airtableURL,
@@ -31,6 +28,9 @@ function Notes() {
         }
       }
     )
+      setNotes(...notes, fields)
+      setSubject('')
+      setNote('')
   }
 
   // I want to make the notes post to the airtable API 
@@ -56,9 +56,8 @@ function Notes() {
           value={note}
           onChange={(event) => setNote(event.target.value)}
         />
-        {/* <button>Add Note</button> */}
+        <button type='submit'>Add Note</button>
       </form>
-      <button onClick={() => setNotes([...notes, newNote])}>Add Note</button>
       {/* {notes.map((note) => ( // to make this map function work, I will have to import the data from the AirTable
         <div>
           <p><strong>{note.subject}</strong></p>
@@ -70,3 +69,7 @@ function Notes() {
 }
 
 export default Notes
+
+
+
+// onClick={() => setNotes([...notes, newNote])}

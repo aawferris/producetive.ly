@@ -2,13 +2,14 @@ body {
   font-family: "Commissioner", sans-serif;
   display: flex;
   flex-direction: column;
-  margin-top: 15%;
   /* border: 1px dashed gray; */
   color: white;
-  font-weight: 500;
+  text-shadow: 2px 2px 8px black;
+  font-weight: 700;
   font-size: 20px;
-  background: url(https://pixabay.com/get/51e3d34b4257b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
+  background: url(https://pixabay.com/get/57e0d2414250af14f6da8c7dda793676133adae455536c48732f79d19648c15fbf_1280.jpg);
   background-size: cover;
+  /* backdrop-filter: blur(2px); */
 }
 
 header {
@@ -17,42 +18,44 @@ header {
 }
 
 .countdown-container {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   margin: 0 auto;
   width: 500px;
   text-align: center;
+  backdrop-filter: blur(0.7px);
 }
 
 .timer-container {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
 .todo-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 500px;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
-.todo {
+/* .todo {
   border: 1px solid black;
-}
+} */
 
-.task-list {
+/* .task-list {
   border: 2px solid blue;
-}
+} */
 
 .notes-container {
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 500px;
   margin: 0 auto;
   text-align: center;
+  justify-content: space-around;
 }
 
 .notes-get {
@@ -61,6 +64,7 @@ header {
   width: 500px;
   background-color: moccasin;
   color: black;
+  text-shadow: 2px 2px 8px white;
 }
 
 .note > textarea {
@@ -73,6 +77,9 @@ header {
 
 .notes-container > form {
   order: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
 }
 
 .notes-container > #subject {
@@ -90,14 +97,14 @@ header {
 }
 
 .welcome-container {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
 .welcome-get {
-  border: 1px solid darkorange;
+  /* border: 1px solid darkorange; */
   width: 500px;
   margin: 0 auto;
   text-align: center;
