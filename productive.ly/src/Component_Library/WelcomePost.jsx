@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 
-function WelcomePost(props) {
+function WelcomePost() {
   const [name, setName] = useState('')
   
   const handleSubmit = async (e) => {

@@ -6,6 +6,8 @@ body {
   border: 1px dashed gray;
   font-weight: 500;
   font-size: 20px;
+  background: url(https://pixabay.com/get/51e3d34b4257b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
+  background-size: cover;
 }
 
 header {
