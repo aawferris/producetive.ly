@@ -31,13 +31,13 @@ function WelcomePost() {
   return (
     <div className='welcome-container'>
       <form onSubmit={handleSubmit} >
-        <label htmlFor='name'>Post</label>
+        <label htmlFor='name'>Hello, </label>
         <input
+          className="name-input"
           type='text'
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <button type='submit'>submit</button>
       </form>
     </div>
   )

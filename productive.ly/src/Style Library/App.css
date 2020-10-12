@@ -4,17 +4,29 @@ body {
   flex-direction: column;
   /* border: 1px dashed gray; */
   color: white;
-  text-shadow: 2px 2px 8px black;
+  text-shadow: 2px 2px 4px black;
   font-weight: 700;
   font-size: 20px;
-  background: url(https://pixabay.com/get/57e0d2414250af14f6da8c7dda793676133adae455536c48732f79d19648c15fbf_1280.jpg);
-  background-size: cover;
+  background: url(https://pixabay.com/get/5ee1d0414355b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   /* backdrop-filter: blur(2px); */
 }
 
 header {
   margin: 0 auto;
   text-align: center;
+}
+
+.name-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .countdown-container {
