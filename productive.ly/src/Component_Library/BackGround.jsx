@@ -13,7 +13,7 @@ function BackGround(props) {
         <img
           src={props.image}
           alt='random nature background prom pixelbay.com'
-          style={backgroundStyle}
+          style={{ backgroundStyle }}
         />
       </div>
     </>

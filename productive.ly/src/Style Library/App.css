@@ -36,11 +36,11 @@ header {
 }
 
 .todo {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .task-list {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 }
 
 .notes-container {
