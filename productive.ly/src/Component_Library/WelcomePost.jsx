@@ -9,18 +9,17 @@ function WelcomePost(props) {
     const fields = {
       name,
     }
-    const airtableURL = `https://api.airtable.com/v0/${REACT_APP_AIRTABLE_BASE}/user`
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/user`
     await axios.post(
       airtableURL,
       { fields },
       {
         headers: {
-          Authorization: `Bearer ${REACT_APP_AIRTABLE_KEY}`,
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         }
       }
     )
   }
-
 
   return (
     <div className='welcome-container'>

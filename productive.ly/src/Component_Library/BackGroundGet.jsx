@@ -7,7 +7,7 @@ function BackGroundGet() {
 
   useEffect(() => {
     const getApi = async () => {
-      const url = `https://pixabay.com/api/?${env.process.REACT_APP_PIXABAY_KEY}&q=nature&image_type=photo&orientation=horizontal`
+      const url = `https://pixabay.com/api/?${process.env.REACT_APP_PIXABAY_KEY}&q=nature&image_type=photo&orientation=horizontal`
       const response = await axios.get(url)
       console.log(response.data.hits[0].largeImageURL);
       const largeImage = response.data.hits[0].largeImageURL

@@ -8,10 +8,10 @@ function WelcomeGet() {
 
   useEffect(() => {
     const getIndex = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${REACT_APP_AIRTABLE_BASE}/user`
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/user`
       const response = await axios.get(airtableURL, {
         headers: {
-          Authorization: `Bearer ${REACT_APP_AIRTABLE_KEY}`
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
         }
       })
       console.log(response.data.records[0].fields.name);

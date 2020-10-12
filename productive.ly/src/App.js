@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./Style Library/App.css";
 
-import BackGroundGet from "./Component Library/BackGroundGet";
-import Countdown from "./Component Library/Countdown";
-// import FocusTimer from "./Component Library/FocusTimer";
-import Notes from "./Component Library/Notes";
-import Tasks from "./Component Library/Tasks";
-import WelcomePost from "./Component Library/WelcomePost";
-import WelcomeGet from "./Component Library/WelcomeGet";
+import BackGroundGet from "./Component_Library/BackGroundGet";
+import BreakButton from "./Component_Library/BreakButton";
+import Countdown from "./Component_Library/Countdown";
+// import FocusTimer from "./Component_Library/FocusTimer";
+import Notes from "./Component_Library/Notes";
+import Tasks from "./Component_Library/Tasks";
+import WelcomePost from "./Component_Library/WelcomePost";
+import WelcomeGet from "./Component_Library/WelcomeGet";
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends Component {
         {/* <FocusTimer /> */}
         <Tasks />
         <Notes />
+        <BreakButton />
       </div>
     );
   }
