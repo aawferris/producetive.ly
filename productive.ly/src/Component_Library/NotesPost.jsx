@@ -39,7 +39,6 @@ function Notes() {
   return (
     <div className='notes-container'>
       <h4>Thought Catcher</h4>
-      <p>Notes:</p> {/* This is where I want to append the note data */}
       <form onSubmit={handleSubmit}>
         <label className='subject' htmlFor='subject'>Subject</label>
         <input
@@ -49,7 +48,7 @@ function Notes() {
           value={subject}
           onChange={(event) => setSubject(event.target.value)}
         />
-        <label className='note' htmlFor='note'></label>
+        <label className='note' htmlFor='note'>Note:</label>
         <textarea
           className='note'
           name='note'

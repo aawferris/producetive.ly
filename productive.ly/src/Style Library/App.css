@@ -3,7 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 15%;
-  border: 1px dashed gray;
+  /* border: 1px dashed gray; */
+  color: white;
   font-weight: 500;
   font-size: 20px;
   background: url(https://pixabay.com/get/51e3d34b4257b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
@@ -47,10 +48,23 @@ header {
 
 .notes-container {
   display: flex;
+  flex-direction: column;
   border: 2px solid blue;
   width: 500px;
   margin: 0 auto;
   text-align: center;
+}
+
+.notes-get {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+  background-color: moccasin;
+  color: black;
+}
+
+.note > textarea {
+  width: 350px;
 }
 
 .notes-container > h4 {
@@ -71,6 +85,8 @@ header {
 
 .notes-container > button {
   order: 3;
+  width: 150px;
+  margin: 0 auto;
 }
 
 .welcome-container {
@@ -83,6 +99,11 @@ header {
 .welcome-get {
   border: 1px solid darkorange;
   width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.break-button {
   margin: 0 auto;
   text-align: center;
 }

@@ -4,7 +4,7 @@ import ToDo from './ToDo'
 function Tasks() {
   const [prevTodos, updateTodos] = useState([
     {
-      task: 'Make sure this is working',
+      task: '',
       done: false
     }
   ])
@@ -38,7 +38,7 @@ function Tasks() {
   return (
     <>
       <div className='todo-container'>
-        <h5 >My Tasks</h5>
+        <h4 >My Tasks</h4>
         <div className='task-list'>
           {prevTodos.map((todo, idx) =>
             <ToDo
