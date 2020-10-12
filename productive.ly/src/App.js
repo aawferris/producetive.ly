@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Style Library/App.css";
 
+import Advice from "./Component_Library/Advice";
 import BackGroundGet from "./Component_Library/BackGroundGet";
 import BreakButton from "./Component_Library/BreakButton";
 import Countdown from "./Component_Library/Countdown";
@@ -22,6 +23,7 @@ export default class App extends Component {
         <NotesGet />
         <NotesPost />
         <BreakButton />
+        <Advice />
       </div>
     );
   }

@@ -16,7 +16,7 @@ function NotesGet() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
         }
       })
-      console.log(response.data.records[0].fields)
+      // console.log(response.data.records[0].fields)
       setNote(response.data.records[0].fields.note)
       setSubject(response.data.records[0].fields.subject)
     }
