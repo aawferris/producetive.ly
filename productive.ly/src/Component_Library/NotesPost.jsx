@@ -8,8 +8,8 @@ function Notes() {
   const [note, setNote] = useState('')
 
   const newNote = {
-    subject: null,
-    note: null
+    subject: 'does it work, though?',
+    note: 'testing 1, 2, 3'
   }
 
   const handleSubmit = async (e) => {

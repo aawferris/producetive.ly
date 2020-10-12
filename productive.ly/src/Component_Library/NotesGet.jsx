@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
+import Notes from './Notes'
+
 
 function NotesGet() {
   const [notes, setNotes] = useState([])
@@ -13,17 +15,17 @@ function NotesGet() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
         }
       })
-      console.log(response.data.records)
-      setNotes(response.data.records)
+      console.log(response.data.records[0].fields.subject)
+      setNotes(response.data.records[0].fields)
     }
     getIndex()
   }, [])
 
   return (
     <div className='notes-get'>
-      {/* <Notes
-        name={name}
-      /> */}
+      <Notes
+        notes={notes}
+      />
     </div>
   )
 }
