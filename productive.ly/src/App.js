@@ -30,6 +30,13 @@ function App() {
 
   let backgroundStyle = {
     backgroundImage: `url(${image})`,
+    position: `absolute`,
+    backgroundSize: `cover`,
+    backgroundRepeat: `no-repeat`,
+    backgroundPosition: `center center`,
+    minHeight: `100vh`,
+    minWidth: `100vw`,
+    zIndex: `-1`,
   };
 
   return (

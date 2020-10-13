@@ -1,49 +1,17 @@
-body {
-  font-family: "Commissioner", sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* border: 1px dashed gray; */
-  color: white;
-  text-shadow: 2px 2px 4px black;
-  font-weight: 700;
-  font-size: 20px;
-  /* margin-top: 5%; */
-  /* background: url(https://pixabay.com/get/5ee1d0414355b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  /* backdrop-filter: blur(2px); */
-}
-
 header {
   margin: 0 auto;
   text-align: center;
 }
 
 .main-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  min-height: 100vh;
-  min-width: 100vw;
-  z-index: -1;
-  position: absolute;
-  /* background-attachment: fixed; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Commissioner", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-weight: 700;
+  font-size: 20px;
 }
-
-/* .background-image {
-  height: 100vh;
-  min-height: 100%;
-  width: 100vw;
-  z-index: -1;
-  position: absolute;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
 
 .name-input {
   background: transparent;
