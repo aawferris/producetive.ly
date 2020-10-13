@@ -108,11 +108,9 @@ header {
   text-align: center;
 }
 
-.welcome-get {
-  /* border: 1px solid darkorange; */
-  width: 500px;
-  margin: 0 auto;
+.Welcome {
   text-align: center;
+  margin: 0 auto;
 }
 
 .break-button {
