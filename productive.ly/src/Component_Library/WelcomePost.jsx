@@ -19,18 +19,16 @@ function WelcomePost() {
         }
       }
     )
+    function handleRefresh() {
+      return window.location.reload()
+    }
+    handleRefresh()
   }
 
-  // setInterval((handleRefresh) => {
-  //   function handleRefresh() {
-  //     return window.location.href
-  //   }
-  //   handleRefresh()
-  // }, 1000);onSubmit={setInterval}
 
   return (
     <div className='welcome-container'>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit}>
         <label htmlFor='name'>Hello, </label>
         <input
           className="name-input"

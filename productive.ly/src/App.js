@@ -9,11 +9,11 @@ import NotesGet from "./Component_Library/NotesGet";
 import NotesPost from "./Component_Library/NotesPost";
 import Tasks from "./Component_Library/Tasks";
 import WelcomePost from "./Component_Library/WelcomePost";
-import WelcomeGet from "./Component_Library/WelcomeGet";
+import Welcome from "./Component_Library/Welcome";
 
 function App() {
+  // BACKGROUND GET
   const [image, setImage] = useState("");
-
   useEffect(() => {
     const getApi = async () => {
       const url = `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=nature&image_type=photo&orientation=horizontal`;
@@ -39,9 +39,25 @@ function App() {
     zIndex: `-1`,
   };
 
+  //WELCOME GET
+  const [name, setName] = useState([]);
+  useEffect(() => {
+    const getIndex = async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/user`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+      });
+      console.log(response.data.records[0].fields.name);
+      setName(response.data.records[0].fields.name);
+    };
+    getIndex();
+  }, []);
+
   return (
     <div className="main-container" style={backgroundStyle}>
-      <WelcomeGet />
+      <Welcome name={name} />
       <WelcomePost />
       <Countdown />
       <Tasks />
