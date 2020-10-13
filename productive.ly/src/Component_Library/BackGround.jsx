@@ -2,20 +2,13 @@ import React from 'react'
 
 
 function BackGround(props) {
-  // let backgroundStyle = {
-  //   background: `url(${props.image})`,
-  //   backgroundSize: "cover",
-  // }
+  let backgroundStyle = {
+    background: `url(${props.image})`,
+  }
 
   return (
     <>
-      <div className='background-image'>
-        {/* <img
-          src={props.image}
-          alt='random nature background prom pixelbay.com'
-          style={{ backgroundStyle }}
-        /> */}
-      </div>
+      <div className='background-image' style={backgroundStyle}></div>
     </>
   )
 }

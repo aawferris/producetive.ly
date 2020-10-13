@@ -8,16 +8,31 @@ body {
   font-weight: 700;
   font-size: 20px;
   margin-top: 5%;
-  background: url(https://pixabay.com/get/5ee1d0414355b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
-  background-size: auto;
+  /* background: url(https://pixabay.com/get/5ee1d0414355b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* backdrop-filter: blur(2px); */
 }
 
 header {
   margin: 0 auto;
   text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .name-input {
