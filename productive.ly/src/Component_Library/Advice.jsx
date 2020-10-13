@@ -16,7 +16,7 @@ function Advice() {
   })
 
   return (
-    <div>
+    <div className='advice'>
       <p>{advice}</p>
     </div>
   )

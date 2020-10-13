@@ -7,6 +7,7 @@ body {
   text-shadow: 2px 2px 4px black;
   font-weight: 700;
   font-size: 20px;
+  margin-top: 5%;
   background: url(https://pixabay.com/get/5ee1d0414355b108f5d0846096293f78103bdfe3514c704f752d7ed59249c25f_1280.jpg);
   background-size: auto;
   background-position: center;
@@ -104,7 +105,6 @@ header {
 
 .notes-container > button {
   order: 3;
-  width: 150px;
   margin: 0 auto;
 }
 
@@ -125,4 +125,21 @@ header {
 .break-button {
   margin: 0 auto;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  text-shadow: none;
+}
+
+.advice {
+  display: flex;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
 }

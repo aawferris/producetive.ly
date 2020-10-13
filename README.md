@@ -84,9 +84,9 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 | Day     | Deliverable                                        | Status     |
 | ------- | -------------------------------------------------- | ---------- |
 | Oct. 8  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| Oct. 9  | Project Approval / HTML / Basic CSS                | Incomplete |
-| Oct. 11 | Pseudocode / Create Component Basic Structure      | Incomplete |
-| Oct. 12 | Component structure / Connect API POST methods     | Incomplete |
+| Oct. 9  | Project Approval / HTML / Basic CSS                | Complete   |
+| Oct. 11 | Pseudocode / Create Component Basic Structure      | Complete   |
+| Oct. 12 | Component structure / Connect API POST methods     | Complete   |
 | Oct. 13 | Fully functional app / More advanced styling       | Incomplete |
 | Oct. 14 | MVP Fully complete / perfect styling               | Incomplete |
 | Oct. 15 | Post MVPs                                          | Incomplete |
@@ -96,17 +96,17 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 
 | Component    | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------ | :------: | :------------: | :-----------: | :---------: |
-| HTML         |    M     |      1hrs      |     -----     |    -----    |
-| Basic CSS    |    M     |      3hrs      |     -----     |    -----    |
-| App.jsx      |    M     |      3hrs      |     -----     |    -----    |
-| Name.jsx     |    M     |      3hrs      |     -----     |    -----    |
-| Focus.jsx    |    M     |      3hrs      |     -----     |    -----    |
-| Break.jsx    |    M     |      3hrs      |     -----     |    -----    |
-| Tasks.jsx    |    M     |      3hrs      |     -----     |    -----    |
-| Notes.jsx    |    M     |      3hrs      |     -----     |    -----    |
-| Setup API DB |    M     |      3hrs      |     -----     |    -----    |
-| API Calls    |    M     |      3hrs      |     -----     |    -----    |
-| Rendering    |    M     |      3hrs      |     -----     |    -----    |
+| HTML         |    M     |      1hrs      |      5m       |     5m      |
+| Basic CSS    |    M     |      3hrs      |      3hr      |     3h      |
+| App.jsx      |    M     |      3hrs      |      1hr      |     1hr     |
+| Name.jsx     |    M     |      3hrs      |      3hr      |     3hr     |
+| Focus.jsx    |    M     |      3hrs      |      3hr      |     3hr     |
+| Break.jsx    |    M     |      3hrs      |      1hr      |     1hr     |
+| Tasks.jsx    |    M     |      3hrs      |      2hr      |     2hr     |
+| Notes.jsx    |    M     |      3hrs      |      3hr      |     3hr     |
+| Setup API DB |    M     |      3hrs      |      15m      |     15m     |
+| API Calls    |    M     |      3hrs      |      3hr      |     3hr     |
+| Rendering    |    M     |      3hrs      |      3hr      |     3hr     |
 | Advanced CSS |    M     |      3hrs      |     -----     |    -----    |
 | Polishing    |    M     |      3hrs      |     -----     |    -----    |
 | Deployment   |    M     |      1hrs      |     -----     |    -----    |
