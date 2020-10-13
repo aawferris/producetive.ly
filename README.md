@@ -68,7 +68,6 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 - Render a task list that allows users to add and remove list items
 - Render a text area for notes that a user can add notes to
 - Render a "take a break" button that takes user to a fun, upbeat video (OR stretching video)
-- Connect Airtable API to the task list
 - Connect Airtable to the notes
 
 #### PostMVP
@@ -87,7 +86,7 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 | Oct. 9  | Project Approval / HTML / Basic CSS                | Complete   |
 | Oct. 11 | Pseudocode / Create Component Basic Structure      | Complete   |
 | Oct. 12 | Component structure / Connect API POST methods     | Complete   |
-| Oct. 13 | Fully functional app / More advanced styling       | Incomplete |
+| Oct. 13 | Fully functional app / More advanced styling       | Complete   |
 | Oct. 14 | MVP Fully complete / perfect styling               | Incomplete |
 | Oct. 15 | Post MVPs                                          | Incomplete |
 | Oct. 16 | Presentations                                      | Incomplete |
