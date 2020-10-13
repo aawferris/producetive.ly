@@ -5,7 +5,7 @@ function Welcome(props) {
   return (
     <>
       <div className='welcome-display'>
-        <p>{props.name}</p>
+        <p>Welcome, {props.name}</p>
       </div>
     </>
   )

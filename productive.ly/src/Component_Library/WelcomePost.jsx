@@ -29,7 +29,7 @@ function WelcomePost() {
   return (
     <div className='welcome-container'>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='name'>Hello, </label>
+        <label htmlFor='name'>What is your name? </label>
         <input
           className="name-input"
           type='text'

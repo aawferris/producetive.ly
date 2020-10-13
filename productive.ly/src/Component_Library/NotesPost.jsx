@@ -7,11 +7,6 @@ function Notes() {
   const [subject, setSubject] = useState('')
   const [note, setNote] = useState('')
 
-  // const newNote = {
-  //   subject: 'does it work, though?',
-  //   note: 'testing 1, 2, 3'
-  // }
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     const fields = {
@@ -32,9 +27,6 @@ function Notes() {
       setSubject('')
       setNote('')
   }
-
-  // I want to make the notes post to the airtable API 
-  // I want to make the notes append (with get) to the page
 
   return (
     <div className='notes-container'>
@@ -58,12 +50,6 @@ function Notes() {
         />
         <button type='submit'>Add Note</button>
       </form>
-      {/* {notes.map((note) => ( // to make this map function work, I will have to import the data from the AirTable
-        <div>
-          <p><strong>{note.subject}</strong></p>
-          <p>{note.note}</p>
-        </div>
-      ))} */}
     </div>
   )
 }
