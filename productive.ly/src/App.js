@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Route } from "react-router-dom";
 import axios from "axios";
 import "./Style Library/AppGrid.css";
 
@@ -6,6 +7,7 @@ import Advice from "./Component_Library/Advice";
 import BreakButton from "./Component_Library/BreakButton";
 import Clock from "./Component_Library/Clock";
 import Countdown from "./Component_Library/Countdown";
+import Home from "./Component_Library/Home";
 import Notes from "./Component_Library/Notes";
 import NotesPost from "./Component_Library/NotesPost";
 import Tasks from "./Component_Library/Tasks";
@@ -74,11 +76,18 @@ function App() {
     getIndex();
   }, []);
 
+  // SHOW MORE
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <div className="app">
       <div className="layout" style={backgroundStyle}>
-        <header>Productive.ly</header>
-        {/* <nav>Nav</nav> */}
+        <header></header>
+        <nav>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </nav>
         <article>
           <div className="main-welcome">
             <Welcome name={name} />
@@ -97,11 +106,29 @@ function App() {
           </div>
         </section>
         <div id="notes">
-          <Notes note={note} subject={subject} />
-          <NotesPost />
+          <a id="button-show" onClick={() => setShowMore(!showMore)}>
+            {showMore ? "Notes" : "Notes"}
+          </a>
+          {showMore ? (
+            <p className="show-more" id="show-task">
+              <Notes note={note} subject={subject} />
+              <NotesPost />
+            </p>
+          ) : (
+            <div></div>
+          )}
         </div>
         <div id="tasks">
-          <Tasks />
+          <a id="button-show" onClick={() => setShowMore(!showMore)}>
+            {showMore ? "Tasks" : "Tasks"}
+          </a>
+          {showMore ? (
+            <p className="show-more" id="show-task">
+              <Tasks />
+            </p>
+          ) : (
+            <div></div>
+          )}
         </div>
         <footer>
           <div className="main-advice">

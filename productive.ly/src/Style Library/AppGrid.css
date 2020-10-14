@@ -1,4 +1,5 @@
 header,
+nav,
 article,
 section,
 #notes,
@@ -23,8 +24,8 @@ footer {
   box-sizing: border-box;
   grid-gap: 5px;
   grid-template-areas:
-    "header header header header header header"
-    "header header header header header header"
+    "header header header header header nav"
+    "header header header header header nav"
     ". . article article . ."
     ". . article article . ."
     ". . section section . ."
@@ -159,6 +160,11 @@ button {
   justify-content: flex-end;
   align-content: flex-end;
   margin-right: 1%;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
 }
 
 .todo-container {

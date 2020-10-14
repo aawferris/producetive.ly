@@ -17,7 +17,7 @@ function Advice() {
 
   return (
     <div className='advice'>
-      <p>"{advice}"</p>
+      <p>And now for your daily Zen: "{advice}"</p>
     </div>
   )
 }
