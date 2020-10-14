@@ -38,7 +38,7 @@ footer {
 
 header {
   grid-area: header;
-  font-size: 36px;
+  font-size: 48px;
 }
 /* nav {
   grid-area: nav;
@@ -85,17 +85,22 @@ section div {
 
 .notes-container {
   grid-area: new;
-  display: flex;
-  flex-direction: column;
   border: 2px solid blue;
-  width: auto;
-  /* margin: 0 auto; */
-  text-align: center;
-  justify-content: space-around;
   backdrop-filter: blur(3px);
 }
 
-.notes-get {
+.notes-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.notes-container button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.notes-display {
   /* border: 3px solid green; */
   grid-area: notes;
   margin: 2% auto;

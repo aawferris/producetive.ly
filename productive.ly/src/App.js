@@ -5,7 +5,7 @@ import "./Style Library/AppGrid.css";
 import Advice from "./Component_Library/Advice";
 import BreakButton from "./Component_Library/BreakButton";
 import Countdown from "./Component_Library/Countdown";
-import NotesGet from "./Component_Library/NotesGet";
+import Notes from "./Component_Library/Notes";
 import NotesPost from "./Component_Library/NotesPost";
 import Tasks from "./Component_Library/Tasks";
 import WelcomePost from "./Component_Library/WelcomePost";
@@ -55,6 +55,24 @@ function App() {
     getIndex();
   }, []);
 
+  // NOTES GET
+  const [note, setNote] = useState([]);
+  const [subject, setSubject] = useState([]);
+
+  useEffect(() => {
+    const getIndex = async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/notes`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+      });
+      setNote(response.data.records[0].fields.note);
+      setSubject(response.data.records[0].fields.subject);
+    };
+    getIndex();
+  }, []);
+
   return (
     <div className="app">
       <div className="layout" style={backgroundStyle}>
@@ -78,7 +96,7 @@ function App() {
           </div>
         </section>
         <div id="notes">
-          <NotesGet />
+          <Notes note={note} subject={subject} />
           <NotesPost />
         </div>
         <div id="tasks">

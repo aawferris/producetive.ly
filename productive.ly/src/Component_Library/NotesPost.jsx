@@ -26,12 +26,17 @@ function Notes() {
       setNotes(...notes, fields)
       setSubject('')
       setNote('')
+    
+    function handleRefresh() {
+      return window.location.reload()
+    }
+    handleRefresh()
   }
 
   return (
     <div className='notes-container'>
       <form onSubmit={handleSubmit}>
-        <label className='subject' htmlFor='subject'>Subject</label>
+        <label className='subject' htmlFor='subject'>Subject:</label>
         <input
           className='subject'
           name='subject'
