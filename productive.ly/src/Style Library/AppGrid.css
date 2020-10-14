@@ -176,14 +176,6 @@ footer {
 @media screen and (max-width: 775px) {
   .layout {
     display: unset;
-
-    /* grid-template-areas:
-      "header header header"
-      ". article. "
-      ". section ."
-      ". notes ."
-      "task"
-      "footer footer footer"; */
   }
 
   #tasks,
@@ -192,6 +184,10 @@ footer {
   .notes-container,
   .todo-container {
     display: unset;
+  }
+
+  .layout div {
+    padding: 2%;
   }
 
   .notes-display {
@@ -213,12 +209,35 @@ footer {
 
 @media screen and (max-width: 375px) {
   .layout {
-    grid-template-areas:
-      "header"
-      "article"
-      "section"
-      "notes"
-      "tasks"
-      "footer";
+    display: unset;
+  }
+
+  .layout div {
+    padding: 4%;
+  }
+
+  #tasks,
+  #notes,
+  .notes-display,
+  .notes-container,
+  .todo-container {
+    display: unset;
+  }
+
+  .notes-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffff99;
+    color: black;
+  }
+
+  #notes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 250px;
   }
 }
