@@ -5,7 +5,6 @@ section,
 #notes,
 #tasks,
 footer {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,7 +100,6 @@ button {
 }
 
 .advice {
-  /* border: 1px solid red; */
   display: flex;
   text-align: center;
   font-style: italic;
@@ -116,6 +114,7 @@ button {
     "new";
   justify-content: flex-start;
   align-content: flex-end;
+  text-align: center;
   margin-left: 1%;
 }
 
@@ -125,7 +124,6 @@ button {
 
 .notes-container {
   grid-area: new;
-  /* border: 2px solid blue; */
   backdrop-filter: brightness(80%);
 }
 
@@ -141,7 +139,6 @@ button {
 }
 
 .notes-display {
-  /* border: 3px solid green; */
   grid-area: notes;
   margin: 0 auto;
   text-align: center;
@@ -155,16 +152,12 @@ button {
 #tasks {
   grid-area: tasks;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
   justify-content: flex-end;
   align-content: flex-end;
   margin-right: 1%;
-}
-
-#tasks {
-  display: flex;
-  flex-direction: column;
 }
 
 .todo-container {
