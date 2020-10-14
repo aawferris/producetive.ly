@@ -4,6 +4,7 @@ import "./Style Library/AppGrid.css";
 
 import Advice from "./Component_Library/Advice";
 import BreakButton from "./Component_Library/BreakButton";
+import Clock from "./Component_Library/Clock";
 import Countdown from "./Component_Library/Countdown";
 import Notes from "./Component_Library/Notes";
 import NotesPost from "./Component_Library/NotesPost";
@@ -85,14 +86,14 @@ function App() {
           </div>
         </article>
         <section>
+          <div className="clock">
+            <Clock />
+          </div>
           <div className="main-countdown">
             <Countdown />
           </div>
           <div className="main-break">
             <BreakButton />
-          </div>
-          <div className="main-advice">
-            <Advice />
           </div>
         </section>
         <div id="notes">
@@ -103,7 +104,9 @@ function App() {
           <Tasks />
         </div>
         <footer>
-          Created by Andrew Ferris, 2020 || All images are from Pixabay
+          <div className="main-advice">
+            <Advice />
+          </div>
         </footer>
       </div>
     </div>

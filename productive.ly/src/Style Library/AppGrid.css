@@ -5,7 +5,7 @@ section,
 #notes,
 #tasks,
 footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -66,17 +66,59 @@ section div {
   color: white;
   font-size: 20px;
   text-shadow: 2px 2px 4px black;
-  margin-bottom: 10%;
+}
+
+.main-welcome {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-display {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.welcome-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clock {
+  font-size: 36px;
+}
+
+.main-break {
+  margin-top: 3%;
+}
+
+button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  text-shadow: none;
+}
+
+.advice {
+  /* border: 1px solid red; */
+  display: flex;
+  text-align: center;
+  font-style: italic;
+  margin: 0 auto;
 }
 
 #notes {
-  display: grid;
   grid-area: notes;
+  display: grid;
   grid-template-areas:
-    "notes notes new"
-    "notes notes new";
-  /* display: flex;
-  flex-direction: column; */
+    "notes"
+    "new";
+  justify-content: flex-start;
+  align-content: flex-end;
+  margin-left: 3%;
 }
 
 #notes div {
@@ -85,14 +127,14 @@ section div {
 
 .notes-container {
   grid-area: new;
-  border: 2px solid blue;
-  backdrop-filter: blur(3px);
+  /* border: 2px solid blue; */
+  backdrop-filter: brightness(80%);
 }
 
 .notes-container form {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
 }
 
 .notes-container button {
@@ -105,8 +147,8 @@ section div {
   grid-area: notes;
   margin: 2% auto;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-color: #ffff99;
   color: black;
   text-shadow: 2px 2px 8px white;
@@ -115,9 +157,19 @@ section div {
 #tasks {
   grid-area: tasks;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin-right: 3%;
 }
+
+.todo-container {
+  backdrop-filter: brightness(70%);
+}
+
 footer {
   grid-area: footer;
-  font-size: 12px;
+  font-size: 14px;
+  backdrop-filter: brightness(30%);
 }
