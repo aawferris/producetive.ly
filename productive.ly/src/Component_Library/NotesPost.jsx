@@ -30,7 +30,6 @@ function Notes() {
 
   return (
     <div className='notes-container'>
-      <h4>Thought Catcher</h4>
       <form onSubmit={handleSubmit}>
         <label className='subject' htmlFor='subject'>Subject</label>
         <input

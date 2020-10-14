@@ -59,7 +59,7 @@ function App() {
     <div className="app">
       <div className="layout" style={backgroundStyle}>
         <header>Productive.ly</header>
-        <nav>Nav</nav>
+        {/* <nav>Nav</nav> */}
         <article>
           <div className="main-welcome">
             <Welcome name={name} />
@@ -84,7 +84,9 @@ function App() {
         <div id="tasks">
           <Tasks />
         </div>
-        <footer>Footer</footer>
+        <footer>
+          Created by Andrew Ferris, 2020 || All images are from Pixabay
+        </footer>
       </div>
     </div>
   );
