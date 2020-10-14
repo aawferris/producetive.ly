@@ -89,10 +89,6 @@ section div {
   font-size: 40px;
 }
 
-.main-break {
-  margin-top: 3%;
-}
-
 button {
   text-decoration: none;
   color: black;
@@ -146,7 +142,7 @@ button {
 .notes-display {
   /* border: 3px solid green; */
   grid-area: notes;
-  margin: 2% auto;
+  margin: 0 auto;
   text-align: center;
   width: 200px;
   height: 200px;
