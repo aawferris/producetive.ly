@@ -21,18 +21,17 @@ footer {
   height: 720px;
   width: 90vw;
   margin: 0px auto;
+  box-sizing: border-box;
   grid-gap: 5px;
   grid-template-areas:
     "header header header header header header"
     "header header header header header header"
-    "article article article article article article"
-    "article article article article article article"
-    "section section section section section section"
-    "section section section section section section"
-    "section section section section section section"
-    "notes notes notes tasks tasks tasks"
-    "notes notes notes tasks tasks tasks"
-    "notes notes notes tasks tasks tasks"
+    ". . article article . ."
+    ". . article article . ."
+    ". . section section . ."
+    ". . section section . ."
+    ". notes notes tasks tasks ."
+    ". notes notes tasks tasks ."
     "footer footer footer footer footer footer";
 }
 
@@ -172,4 +171,54 @@ footer {
   grid-area: footer;
   font-size: 14px;
   backdrop-filter: brightness(30%);
+}
+
+@media screen and (max-width: 775px) {
+  .layout {
+    display: unset;
+
+    /* grid-template-areas:
+      "header header header"
+      ". article. "
+      ". section ."
+      ". notes ."
+      "task"
+      "footer footer footer"; */
+  }
+
+  #tasks,
+  #notes,
+  .notes-display,
+  .notes-container,
+  .todo-container {
+    display: unset;
+  }
+
+  .notes-display {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffff99;
+    color: black;
+  }
+
+  #notes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .layout {
+    grid-template-areas:
+      "header"
+      "article"
+      "section"
+      "notes"
+      "tasks"
+      "footer";
+  }
 }
