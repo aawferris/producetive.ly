@@ -13,6 +13,10 @@ header {
   font-size: 20px;
 }
 
+.main-notes {
+  border: 5px solid blue;
+}
+
 .welcome-display {
   text-align: center;
   margin: 0 auto;
@@ -52,14 +56,6 @@ header {
   text-align: center;
 }
 
-/* .todo {
-  border: 1px solid black;
-} */
-
-/* .task-list {
-  border: 2px solid blue;
-} */
-
 .notes-container {
   display: flex;
   flex-direction: column;
@@ -71,7 +67,7 @@ header {
 }
 
 .notes-get {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   margin: 2% auto;
   text-align: center;
   width: 300px;

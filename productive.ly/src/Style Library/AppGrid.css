@@ -1,0 +1,67 @@
+header,
+nav,
+article,
+section,
+#notes,
+#tasks,
+footer {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.layout {
+  display: grid;
+  height: 720px;
+  width: 90vw;
+  margin: 0px auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "header header header header nav nav"
+    "header header header header nav nav"
+    "article article article article article article"
+    "article article article article article article"
+    "section section section section section section"
+    "section section section section section section"
+    "section section section section section section"
+    "notes notes notes tasks tasks tasks"
+    "notes notes notes tasks tasks tasks"
+    "notes notes notes tasks tasks tasks"
+    "footer footer footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+  /* border: 2px solid red; */
+}
+article {
+  grid-area: article;
+}
+section {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section div {
+  margin: 5px;
+  box-sizing: border-box;
+}
+#notes {
+  grid-area: notes;
+}
+#tasks {
+  grid-area: tasks;
+}
+footer {
+  grid-area: footer;
+}
