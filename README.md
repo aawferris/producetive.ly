@@ -145,3 +145,22 @@ Link to a visual: https://drive.google.com/file/d/1QWMa7QawqCwcmTji5AyeoCRuymG57
 - Not reaching out for help soon enough! (NO TOKENS!)
 
 ### Code Snippet:
+
+    function handleRefresh() {
+      return window.location.reload()
+    }
+    handleRefresh()
+
+}
+
+    let backgroundStyle = {
+    backgroundImage: `url(${image})`,
+    position: `absolute`,
+    backgroundSize: `cover`,
+    backgroundRepeat: `no-repeat`,
+    backgroundPosition: `center center`,
+    minHeight: `100vh`,
+    minWidth: `100vw`,
+    zIndex: `-1`,
+
+};
