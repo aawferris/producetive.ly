@@ -127,10 +127,10 @@ function HomePage(props) {
               {showMoreNotes ? "Notes" : "Notes"}
             </button>
             {showMoreNotes ? (
-              <p className="show-more" id="show-task">
+              <div className="show-more" id="show-task">
                 <Notes note={note} subject={subject} />
                 <NotesPost />
-              </p>
+              </div>
             ) : (
               <div></div>
             )}
@@ -144,9 +144,9 @@ function HomePage(props) {
               {showMoreTasks ? "Tasks" : "Tasks"}
             </button>
             {showMoreTasks ? (
-              <p className="show-more" id="show-task">
+              <div className="show-more" id="show-task">
                 <Tasks />
-              </p>
+              </div>
             ) : (
               <div></div>
             )}

@@ -175,14 +175,17 @@ section div {
     display: unset;
   }
 
-  .layout div {
+  .layout {
+    display: flex;
+    flex-direction: column;
     padding: 2%;
   }
 
   .notes-display {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 300px;
     margin: 0 auto;
     background-color: #ffff99;
     color: black;
@@ -201,7 +204,7 @@ section div {
     display: unset;
   }
 
-  .layout div {
+  .layout {
     padding: 4%;
   }
 
@@ -211,6 +214,18 @@ section div {
   .notes-container,
   .todo-container {
     display: unset;
+  }
+
+  #tasks,
+  .todo-container {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 41%;
+  }
+
+  .clock {
+    font-size: 25px;
   }
 
   .notes-display {
