@@ -87,8 +87,8 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 | Oct. 11 | Pseudocode / Create Component Basic Structure      | Complete   |
 | Oct. 12 | Component structure / Connect API POST methods     | Complete   |
 | Oct. 13 | Fully functional app / More advanced styling       | Complete   |
-| Oct. 14 | MVP Fully complete / perfect styling               | Incomplete |
-| Oct. 15 | Post MVPs                                          | Incomplete |
+| Oct. 14 | MVP Fully complete / perfect styling               | Complete   |
+| Oct. 15 | Post MVPs                                          | Complete   |
 | Oct. 16 | Presentations                                      | Incomplete |
 
 ## Timeframes
@@ -106,12 +106,12 @@ https://airtable.com/invite/l?inviteId=invtjjK54leZwEhgE&inviteToken=a15eff55047
 | Setup API DB |    M     |      3hrs      |      15m      |     15m     |
 | API Calls    |    M     |      3hrs      |      3hr      |     3hr     |
 | Rendering    |    M     |      3hrs      |      3hr      |     3hr     |
-| Advanced CSS |    M     |      3hrs      |     -----     |    -----    |
-| Polishing    |    M     |      3hrs      |     -----     |    -----    |
-| Deployment   |    M     |      1hrs      |     -----     |    -----    |
-| Debugging    |    M     |      3hrs      |     -----     |    -----    |
-| Research     |    M     |      3hrs      |     -----     |    -----    |
-| PostMVP      |    M     |      3hrs      |     -----     |    -----    |
+| Advanced CSS |    M     |      3hrs      |      6hr      |     6hr     |
+| Polishing    |    M     |      3hrs      |      3hr      |     3hr     |
+| Deployment   |    M     |      1hrs      |      1hr      |     1hr     |
+| Debugging    |    M     |      3hrs      |      3hr      |     3hr     |
+| Research     |    M     |      3hrs      |      3hr      |     3hr     |
+| PostMVP      |    M     |      3hrs      |      6hr      |     6hr     |
 | Total        |    H     |     46hrs      |     -----     |    -----    |
 
 ## SWOT Analysis
@@ -143,3 +143,5 @@ Link to a visual: https://drive.google.com/file/d/1QWMa7QawqCwcmTji5AyeoCRuymG57
 ### Threats:
 
 - Not reaching out for help soon enough! (NO TOKENS!)
+
+### Code Snippet:
