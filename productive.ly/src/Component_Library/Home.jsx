@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div>
-      <Link to="/Home"><h1>Productive.ly</h1></Link>
+      <Link to="/Home"><h1>Welcome to Productive.ly</h1></Link>
     </div>
   )
 }

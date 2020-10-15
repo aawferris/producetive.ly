@@ -6,6 +6,8 @@ function Weather(props) {
     <>
       <div className='weather-display'>
         <p>Weather</p>
+        {/* <p>{props.name}</p> */}
+        {/* <p>{props.main.temp}</p> */}
       </div>
     </>
   )

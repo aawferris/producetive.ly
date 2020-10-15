@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import axios from "axios";
 import "./Style Library/AppGrid.css";
 
@@ -84,15 +84,16 @@ function App() {
     background: "transparent",
     border: "none",
     fontSize: "18px",
+    textShadow: "2px 2px 4px black",
   };
 
   //WEATHER GET
   const [weather, setWeather] = useState("");
   useEffect(() => {
     const getIndex = async () => {
-      const weatherURL = `api.openweathermap.org/data/2.5/weather?zip=29582,us&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+      const weatherURL = `https://api.openweathermap.org/data/2.5/weather?zip=29582,us&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`;
       const response = await axios.get(weatherURL);
-      console.log(response);
+      console.log(response.data);
       setWeather(response);
     };
     getIndex();
@@ -101,11 +102,15 @@ function App() {
   return (
     <div className="app">
       <div className="layout" style={backgroundStyle}>
-        <header></header>
+        <header>
+          {/* <Link to="/Home">
+            <p>Welcome to Productive.ly</p>
+          </Link> */}
+        </header>
         <nav>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Home />
-          </Route>
+          </Route> */}
           <Weather weather={weather} />
         </nav>
         <article>
