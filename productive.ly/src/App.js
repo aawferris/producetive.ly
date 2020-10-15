@@ -81,6 +81,9 @@ function App() {
   // SHOW MORE STYLE
   let showStyle = {
     color: "#ffffffbb",
+    background: "transparent",
+    border: "none",
+    fontSize: "18px",
   };
 
   //WEATHER GET
