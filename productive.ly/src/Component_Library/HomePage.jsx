@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
-import {Route} from 'react-router-dom'
 
 import Advice from "./Advice";
 import BreakButton from "./BreakButton";
@@ -9,7 +8,6 @@ import Countdown from "./Countdown";
 import Notes from "./Notes";
 import NotesPost from "./NotesPost";
 import Tasks from "./Tasks";
-// import Weather from "./Weather";
 import WelcomePost from "./WelcomePost";
 import Welcome from "./Welcome";
 
@@ -85,7 +83,7 @@ function HomePage(props) {
     textShadow: "2px 2px 4px black",
   };
 
-  //WEATHER GET
+  //WEATHER GET (in Progress)
   // const [weather, setWeather] = useState("");
   // useEffect(() => {
   //   const getIndex = async () => {
@@ -100,12 +98,9 @@ function HomePage(props) {
   return (
       <div className="app">
         <div className="layout" style={backgroundStyle}>
-          
         <header>
-          <Route exact path="/About"></Route>
         </header>
           <nav>
-            {/* <Weather weather={weather} /> */}
           </nav>
           <article>
             <div className="main-welcome">
