@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 
-function Notes() {
+function Notes(props) {
   const [notes, setNotes] = useState('')
   const [subject, setSubject] = useState('')
   const [note, setNote] = useState('')
@@ -26,11 +26,7 @@ function Notes() {
       setNotes(...notes, fields)
       setSubject('')
       setNote('')
-    
-    function handleRefresh() {
-      return window.location.reload()
-    }
-    handleRefresh()
+      props.setRefresh(!props.refresh)
   }
 
   return (

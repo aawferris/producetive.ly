@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 
-function WelcomePost() {
+function WelcomePost(props) {
   const [name, setName] = useState('')
   
   const handleSubmit = async (e) => {
@@ -19,10 +19,8 @@ function WelcomePost() {
         }
       }
     )
-    function handleRefresh() {
-      return window.location.reload()
-    }
-    handleRefresh()
+    setName('')
+    props.setRefresh(!props.refresh)
   }
 
 

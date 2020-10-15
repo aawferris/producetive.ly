@@ -39,20 +39,21 @@ function HomePage(props) {
   };
 
   //WELCOME GET
-  const [name, setName] = useState([]);
+  const [name, setName] = useState('');
+  const [refresh, setRefresh] = useState(false)
   useEffect(() => {
     const getIndex = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/user`;
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/user?sort%5B0%5D%5Bfield%5D=created_at&
+      sort%5B0%5D%5Bdirection%5D=desc`;
       const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records[0].fields.name);
-      setName(response.data.records[0].fields.name);
+      setName(response.data.records[response.data.records.length -1].fields.name);
     };
     getIndex();
-  }, []);
+  }, [refresh]);
 
   // NOTES GET
   const [note, setNote] = useState([]);
@@ -60,17 +61,19 @@ function HomePage(props) {
 
   useEffect(() => {
     const getIndex = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/notes`;
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/notes?sort%5B0%5D%5Bfield%5D=created_at&
+      sort%5B0%5D%5Bdirection%5D=desc
+      `;
       const response = await axios.get(airtableURL, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      setNote(response.data.records[0].fields.note);
-      setSubject(response.data.records[0].fields.subject);
+      setNote(response.data.records[response.data.records.length -1].fields.note);
+      setSubject(response.data.records[response.data.records.length -1].fields.subject);
     };
     getIndex();
-  }, []);
+  }, [refresh]);
 
   // SHOW MORE STYLE
   const [showMoreTasks, setShowMoreTasks] = useState(false);
@@ -104,7 +107,7 @@ function HomePage(props) {
           </nav>
           <article>
             <div className="main-welcome">
-            <Welcome name={name}/><WelcomePost />
+            <Welcome name={name} /><WelcomePost refresh={refresh} setRefresh={setRefresh}/>
             </div>
           </article>
           <section>
@@ -129,7 +132,7 @@ function HomePage(props) {
             {showMoreNotes ? (
               <div className="show-more" id="show-task">
                 <Notes note={note} subject={subject} />
-                <NotesPost />
+                <NotesPost refresh={refresh} setRefresh={setRefresh}/>
               </div>
             ) : (
               <div></div>
