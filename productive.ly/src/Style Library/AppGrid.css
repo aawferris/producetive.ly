@@ -89,7 +89,7 @@ section div {
   font-size: 40px;
 }
 
-button {
+/* button {
   text-decoration: none;
   color: black;
   border: 1px solid black;
@@ -97,7 +97,7 @@ button {
   padding: 5px;
   background-color: white;
   text-shadow: none;
-}
+} */
 
 .advice {
   display: flex;
@@ -109,9 +109,7 @@ button {
 #notes {
   grid-area: notes;
   display: grid;
-  grid-template-areas:
-    "notes"
-    "new";
+  grid-template-areas: "new notes";
   justify-content: flex-start;
   align-content: flex-end;
   text-align: center;
@@ -239,10 +237,11 @@ footer {
   }
 }
 
+/* Sourced from https://emilkowalski.github.io/css-effects-snippets/ */
 .circleScaleBtn {
-  padding: 12px 24px;
+  padding: 12px;
   background-color: hsl(222, 100%, 95%);
-  color: hsl(243, 80%, 62%);
+  color: hsl(0, 80%, 62%);
   position: relative;
   border-radius: 6px;
   overflow: hidden;
@@ -265,7 +264,7 @@ footer {
   transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
   transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
     transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-  background-color: hsl(243, 80%, 62%);
+  background-color: hsl(0, 80%, 62%);
   opacity: 0;
 }
 
