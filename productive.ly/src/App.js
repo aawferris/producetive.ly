@@ -11,6 +11,7 @@ import Home from "./Component_Library/Home";
 import Notes from "./Component_Library/Notes";
 import NotesPost from "./Component_Library/NotesPost";
 import Tasks from "./Component_Library/Tasks";
+import Weather from "./Component_Library/Weather";
 import WelcomePost from "./Component_Library/WelcomePost";
 import Welcome from "./Component_Library/Welcome";
 
@@ -21,11 +22,9 @@ function App() {
     const getApi = async () => {
       const url = `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=nature&image_type=photo&orientation=horizontal`;
       const response = await axios.get(url);
-      console.log(response.data.hits);
       const imageArr = response.data.hits;
       const largeImage =
         imageArr[Math.floor(Math.random() * imageArr.length)].largeImageURL;
-      console.log(largeImage);
       setImage(largeImage);
     };
     getApi();
@@ -52,7 +51,6 @@ function App() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records[0].fields.name);
       setName(response.data.records[0].fields.name);
     };
     getIndex();
@@ -77,7 +75,25 @@ function App() {
   }, []);
 
   // SHOW MORE
-  const [showMore, setShowMore] = useState(false);
+  const [showMoreTasks, setShowMoreTasks] = useState(false);
+  const [showMoreNotes, setShowMoreNotes] = useState(false);
+
+  // SHOW MORE STYLE
+  let showStyle = {
+    color: "#ffffffbb",
+  };
+
+  //WEATHER GET
+  const [weather, setWeather] = useState("");
+  useEffect(() => {
+    const getIndex = async () => {
+      const weatherURL = `api.openweathermap.org/data/2.5/weather?zip=29582,us&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+      const response = await axios.get(weatherURL);
+      console.log(response);
+      setWeather(response);
+    };
+    getIndex();
+  }, []);
 
   return (
     <div className="app">
@@ -87,6 +103,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Weather weather={weather} />
         </nav>
         <article>
           <div className="main-welcome">
@@ -106,10 +123,14 @@ function App() {
           </div>
         </section>
         <div id="notes">
-          <a id="button-show" onClick={() => setShowMore(!showMore)}>
-            {showMore ? "Notes" : "Notes"}
-          </a>
-          {showMore ? (
+          <button
+            style={showStyle}
+            id="button-show"
+            onClick={() => setShowMoreNotes(!showMoreNotes)}
+          >
+            {showMoreNotes ? "Notes" : "Notes"}
+          </button>
+          {showMoreNotes ? (
             <p className="show-more" id="show-task">
               <Notes note={note} subject={subject} />
               <NotesPost />
@@ -119,10 +140,14 @@ function App() {
           )}
         </div>
         <div id="tasks">
-          <a id="button-show" onClick={() => setShowMore(!showMore)}>
-            {showMore ? "Tasks" : "Tasks"}
-          </a>
-          {showMore ? (
+          <button
+            style={showStyle}
+            id="button-show"
+            onClick={() => setShowMoreTasks(!showMoreTasks)}
+          >
+            {showMoreTasks ? "Tasks" : "Tasks"}
+          </button>
+          {showMoreTasks ? (
             <p className="show-more" id="show-task">
               <Tasks />
             </p>
