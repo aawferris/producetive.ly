@@ -77,7 +77,6 @@ function HomePage(props) {
   }, []);
 
   // SHOW MORE STYLE
-  // SHOW MORE
   const [showMoreTasks, setShowMoreTasks] = useState(false);
   const [showMoreNotes, setShowMoreNotes] = useState(false);
   let showStyle = {
