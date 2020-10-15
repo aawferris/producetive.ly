@@ -98,7 +98,7 @@ function HomePage(props) {
   return (
       <div className="app">
         <div className="layout" style={backgroundStyle}>
-        <header>
+        <header id="hp-header">
         </header>
           <nav>
           </nav>
@@ -151,7 +151,7 @@ function HomePage(props) {
               <div></div>
             )}
           </div>
-          <footer>
+          <footer id='hp-footer'>
             <div className="main-advice">
               <Advice />
             </div>
