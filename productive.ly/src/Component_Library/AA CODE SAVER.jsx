@@ -12,3 +12,6 @@ Refresh = async () => {
 
 //maybe can use for search bar postMVP
 { onSearch }
+
+'?sort%5B0%5D%5Bfield%5D=name&sort%5B0%5D%5Bdirection%5D=desc'
+{...name.map((name) => ( {...name.fields.name} ))}
