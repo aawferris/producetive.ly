@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Link } from "react-router-dom";
+// import { Route, Link } from "react-router-dom";
 import axios from "axios";
 import "./Style Library/AppGrid.css";
 
@@ -7,7 +7,7 @@ import Advice from "./Component_Library/Advice";
 import BreakButton from "./Component_Library/BreakButton";
 import Clock from "./Component_Library/Clock";
 import Countdown from "./Component_Library/Countdown";
-import Home from "./Component_Library/Home";
+// import Home from "./Component_Library/Home";
 import Notes from "./Component_Library/Notes";
 import NotesPost from "./Component_Library/NotesPost";
 import Tasks from "./Component_Library/Tasks";

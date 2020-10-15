@@ -86,18 +86,11 @@ section div {
 }
 
 .clock {
-  font-size: 40px;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
-
-/* button {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: white;
-  text-shadow: none;
-} */
 
 .advice {
   display: flex;
@@ -238,7 +231,7 @@ footer {
 }
 
 /* Sourced from https://emilkowalski.github.io/css-effects-snippets/ */
-.circleScaleBtn {
+#circleScaleBtn {
   padding: 12px;
   background-color: hsl(222, 100%, 95%);
   color: hsl(0, 80%, 62%);
@@ -248,12 +241,12 @@ footer {
   z-index: 1;
 }
 
-.circleScaleBtn span {
+#circleScaleBtn span {
   z-index: 1;
   position: relative;
 }
 
-.circleScaleBtn::before {
+#circleScaleBtn::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -268,11 +261,11 @@ footer {
   opacity: 0;
 }
 
-.circleScaleBtn:hover span {
+#circleScaleBtn:hover span {
   color: hsl(222, 100%, 95%);
 }
 
-.circleScaleBtn:hover::before {
+#circleScaleBtn:hover::before {
   opacity: 1;
   transition-duration: 0.85s;
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
