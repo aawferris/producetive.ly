@@ -4,14 +4,16 @@ import "./Style Library/AppGrid.css";
 
 import About from "./Component_Library/About";
 import HomePage from "./Component_Library/HomePage";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div>
+      <Navbar id="nav-bar" />
       <Route exact path="/">
         <HomePage />
       </Route>
-      <Route exact path="/About">
+      <Route path="/About">
         <About />
       </Route>
     </div>

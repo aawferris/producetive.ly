@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutStyle from '../Style Library/AboutStyle.css'
+import '../Style Library/AboutStyle.css'
 
 function About() {
   return (
@@ -17,7 +17,7 @@ function About() {
       <p>With our proprietary blend of codes and routes,
       we are able to offer a high-quality, hand-crafted app made from the finest
         naturally sourced React and JavaScript ingredients from artisnal hands.</p>
-      <img src='./twyla.jpg' alt='photo of a business-y twyla' height='400px' width='auto'/>
+      <img src='./twyla.jpg' alt='business-y twyla' height='400px' width='auto'/>
     </div>
   )
 }

@@ -6,12 +6,10 @@ import Advice from "./Advice";
 import BreakButton from "./BreakButton";
 import Clock from "./Clock";
 import Countdown from "./Countdown";
-// import About from "./About";
-import AboutButton from "./AboutButton";
 import Notes from "./Notes";
 import NotesPost from "./NotesPost";
 import Tasks from "./Tasks";
-import Weather from "./Weather";
+// import Weather from "./Weather";
 import WelcomePost from "./WelcomePost";
 import Welcome from "./Welcome";
 
@@ -88,31 +86,30 @@ function HomePage(props) {
   };
 
   //WEATHER GET
-  const [weather, setWeather] = useState("");
-  useEffect(() => {
-    const getIndex = async () => {
-      const weatherURL = `https://api.openweathermap.org/data/2.5/weather?zip=29582,us&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`;
-      const response = await axios.get(weatherURL);
-      // console.log(response.data);
-      setWeather(response);
-    };
-    getIndex();
-  }, []);
+  // const [weather, setWeather] = useState("");
+  // useEffect(() => {
+  //   const getIndex = async () => {
+  //     const weatherURL = `https://api.openweathermap.org/data/2.5/weather?zip=29582,us&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+  //     const response = await axios.get(weatherURL);
+  //     // console.log(response.data);
+  //     setWeather(response);
+  //   };
+  //   getIndex();
+  // }, []);
 
   return (
       <div className="app">
         <div className="layout" style={backgroundStyle}>
-          <Route exact path="/About">
-            <AboutButton />
-          </Route>
-          <header></header>
+          
+        <header>
+          <Route exact path="/About"></Route>
+        </header>
           <nav>
-            <Weather weather={weather} />
+            {/* <Weather weather={weather} /> */}
           </nav>
           <article>
             <div className="main-welcome">
-            <Welcome name={name}/>
-              <WelcomePost />
+            <Welcome name={name}/><WelcomePost />
             </div>
           </article>
           <section>

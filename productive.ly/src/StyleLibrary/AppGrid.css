@@ -38,6 +38,7 @@ header {
   grid-area: header;
   font-size: 48px;
 }
+
 article {
   grid-area: article;
 }
