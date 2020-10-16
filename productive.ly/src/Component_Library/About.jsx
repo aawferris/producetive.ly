@@ -13,7 +13,7 @@ function About() {
         <img src='./twyla.jpg' alt='business-y twyla' height='400px' width='auto'/>
       </div>
       <article id='as-article'>
-        <p>
+        <p className="p-art"> 
           Born inside of a volcanic eruption during an earthquake in Papua New Guinea,
           our founder, Twyla Thwarp, was not only struck with flying rock, but also an idea.
           This idea would become the mega conglomerate everyone knows and loves today: <strong>Starcrutch</strong>;  
@@ -21,16 +21,16 @@ function About() {
           and twelve step-sibilings later, Twyla and Starcrutch offer the world's foremost proudctivity 
           Chrome browser extension: <strong>Productive.ly</strong>.
         </p>
-        <p>With our proprietary blend of codes and routes,
+        <p className="p-art">With our proprietary blend of codes and routes,
         we are able to offer a high-quality, hand-crafted app made from the finest
           naturally sourced React and JavaScript ingredients from artisnal hands.</p>
-        <p>
+        <p className="p-art">
           During the second age of the Thundegren blockade, the Schwartzenälfen were nigh to take the Ford of Nederkroos. 
           It was then that a yound shieldmaiden, named Twyla entered the scene for the first time to smite all of the Schwartzenälfen with her magicks.
           Unfortunately, whilst running towards her rival, König Feuraschen, she tripped and broke her leg.  It was then that she first wielded crutches. 
            <strong> It would not be the last.</strong>  
         </p>
-        <p>
+        <p className="p-art">
           During her recuperation, she suddenly awoke one morning ere the breaking of the dawn to find herself with an unquenchable thirst.  The thirts, driving her towards
            the point of maddness saw her rise from her bedding, crustch under arm and forge a path towards the cafeteria. While in the cafetaria, she happened upon a young man
            adorned in a light linen gown named Gary.  Gary introduced Twyla to tha ambrosia of the gods; coffee.  This fateful happenstance would render the the 

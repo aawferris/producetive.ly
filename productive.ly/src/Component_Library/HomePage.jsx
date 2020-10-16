@@ -12,7 +12,7 @@ import WelcomePost from "./WelcomePost";
 import Welcome from "./Welcome";
 
 function HomePage(props) {  
-  // BACKGROUND GET
+  // BACKGROUND IMAGE GET
   const [image, setImage] = useState("");
   
   useEffect(() => {
@@ -38,7 +38,7 @@ function HomePage(props) {
     zIndex: `-1`,
   };
 
-  //WELCOME GET
+  //WELCOME NAME GET
   const [name, setName] = useState('');
   const [refresh, setRefresh] = useState(false)
   useEffect(() => {
@@ -55,7 +55,7 @@ function HomePage(props) {
     getIndex();
   }, [refresh]);
 
-  // NOTES GET
+  // USER NOTES GET
   const [note, setNote] = useState([]);
   const [subject, setSubject] = useState([]);
 
@@ -75,7 +75,7 @@ function HomePage(props) {
     getIndex();
   }, [refresh]);
 
-  // SHOW MORE STYLE
+  // SHOW MORE BUTTONS & STYLE
   const [showMoreTasks, setShowMoreTasks] = useState(false);
   const [showMoreNotes, setShowMoreNotes] = useState(false);
   let showStyle = {

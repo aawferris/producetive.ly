@@ -35,12 +35,14 @@ p {
 #photo {
   grid-area: photo;
   align-self: center;
+  padding: 10px;
 }
 #as-article {
   grid-area: article;
   display: flex;
   flex-direction: column;
   width: 50vw;
+  border: 1px solid red;
 }
 #as-section {
   grid-area: section;
@@ -51,4 +53,30 @@ p {
 }
 footer {
   grid-area: footer;
+}
+
+@media screen and (max-width: 1200px) {
+  #layout {
+    grid-template-areas:
+      "header"
+      "photo "
+      "article"
+      "section"
+      "footer";
+  }
+
+  #as-article {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  #photo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p-art {
+    font-size: 12px;
+  }
 }
