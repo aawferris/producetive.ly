@@ -146,13 +146,6 @@ Link to a visual: https://drive.google.com/file/d/1QWMa7QawqCwcmTji5AyeoCRuymG57
 
 ### Code Snippet:
 
-    function handleRefresh() {
-      return window.location.reload()
-    }
-    handleRefresh()
-
-}
-
     let backgroundStyle = {
     backgroundImage: `url(${image})`,
     position: `absolute`,
