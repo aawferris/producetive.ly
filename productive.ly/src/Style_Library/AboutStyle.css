@@ -42,7 +42,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  border: 1px solid red;
 }
 #as-section {
   grid-area: section;

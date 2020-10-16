@@ -27,6 +27,7 @@ function HomePage(props) {
     getApi();
   }, []);
 
+  // RENDERS AND FORMATS BACKGROUND
   let backgroundStyle = {
     backgroundImage: `url(${image})`,
     position: `absolute`,
@@ -99,14 +100,16 @@ function HomePage(props) {
   // }, []);
 
   return (
-      <div className="app">
-        <div className="layout" style={backgroundStyle}>
+    <div className="app">
+      {/* This is where the background image appends */}
+        <div className="layout" style={backgroundStyle}> 
         <header id="hp-header">
         </header>
           <nav>
           </nav>
           <article>
-            <div className="main-welcome">
+          <div className="main-welcome">
+            {/* This set refresh handles auto-refreshing the page to make the data from airtable render */}
             <Welcome name={name} /><WelcomePost refresh={refresh} setRefresh={setRefresh}/>
             </div>
           </article>
@@ -121,7 +124,8 @@ function HomePage(props) {
               <BreakButton />
             </div>
           </section>
-          <div id="notes">
+        <div id="notes">
+          {/* This button renders the show function for notes*/}
             <button
               style={showStyle}
               id="button-show"
@@ -138,7 +142,8 @@ function HomePage(props) {
               <div></div>
             )}
           </div>
-          <div id="tasks">
+        <div id="tasks">
+          {/* This button renders the show function for tasks*/}
             <button
               style={showStyle}
               id="button-show"

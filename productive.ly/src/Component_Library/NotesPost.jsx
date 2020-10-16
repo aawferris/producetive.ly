@@ -7,6 +7,7 @@ function Notes(props) {
   const [subject, setSubject] = useState('')
   const [note, setNote] = useState('')
 
+  // makes the API POST call
   const handleSubmit = async (e) => {
     e.preventDefault()
     const fields = {
@@ -26,7 +27,8 @@ function Notes(props) {
       setNotes(...notes, fields)
       setSubject('')
       setNote('')
-      props.setRefresh(!props.refresh)
+      // refreshes the page after it posts
+      props.setRefresh(!props.refresh) 
   }
 
   return (

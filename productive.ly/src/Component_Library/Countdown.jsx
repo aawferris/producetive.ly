@@ -10,18 +10,18 @@ export default class Countdown extends Component {
   }
 
   startTimer = () => {
-    this.setState({ // changes this from state to setState
+    this.setState({ // this sets the defualt beginning settings
       timerOn: true,
       timerStart: this.state.timerTime,
       timerTime: this.state.timerTime
     })
-    this.timer = setInterval(() => {
+    this.timer = setInterval(() => {  // this makes it count down when user adds a new time greater than 0
       const newTime = this.state.timerTime - 10
       if (newTime >= 0) {
         this.setState({
           timerTime: newTime
         })
-      } else {
+      } else { // when the countdown reaches zero, it alerts countdown ended
         clearInterval(this.timer)
         this.setState({ timerOn: false })
         alert("Countdown ended")
@@ -29,12 +29,14 @@ export default class Countdown extends Component {
     }, 10)
   }
 
-  stopTimer = () => {
+  // this handles the stop timer button function by changing the timerOn to false
+  stopTimer = () => {  
     clearInterval(this.timer)
     this.setState({timerOn: false})
   }
 
-  resetTimer = () => {
+  // this handles the reset button by putting it back to its original setState
+  resetTimer = () => { 
     if (this.state.timerOn === false) {
       this.setState({
         timerTime: this.state.timerStart
@@ -42,6 +44,7 @@ export default class Countdown extends Component {
     }
   }
 
+  // this puts limits on the amnount of time a user can input as well as defines what increment and decrement buttons do
   adjustTimer = input => {
     const { timerTime, timerOn } = this.state
     const max = 216000000
@@ -62,13 +65,14 @@ export default class Countdown extends Component {
     }
   }
 
-
+  // the let variables turn numbers into base 60 so that they are legible as time and not just integers counting down
   render() {
     const { timerTime, timerStart, timerOn } = this.state;
     let seconds = ('0' + (Math.floor((timerTime / 1000) % 60) % 60)).slice(-2)
     let minutes = ('0' + (Math.floor((timerTime / 60000) % 60))).slice(-2)
     let hours = ('0' + (Math.floor((timerTime / 3600000) % 60))).slice(-2)
 
+    // this is all the actual display
     return (
       <div className='countdown-container'>
         <div className='countdown-header'>
@@ -82,6 +86,7 @@ export default class Countdown extends Component {
             <button onClick={() => this.adjustTimer('decMinutes')}>&#8681;</button>
             <button onClick={() => this.adjustTimer('decSeconds')}>&#8681;</button>
           </div>
+          {/* These ternaries toggle the different states of the timer */}
           {timerOn === false && (timerStart === 0 || timerTime === timerStart) && (<button onClick={this.startTimer}>Start</button>)}
           {timerOn === true && (timerStart >= 1000 && (<button onClick={this.stopTimer}>Stop</button>))}
           {timerOn === false && (timerStart !== 0 && timerStart !== timerTime && timerTime !== 0) && (<button onClick={this.startTimer}>Resume</button>)}

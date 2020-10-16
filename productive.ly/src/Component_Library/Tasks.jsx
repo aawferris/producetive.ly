@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ToDo from './ToDo'
 
+// sets task default state to uncrossed out and empty string
 function Tasks() {
   const [prevTodos, updateTodos] = useState([
     {
@@ -9,6 +10,7 @@ function Tasks() {
     }
   ])
 
+  // this handles the cross out when done
   const [newTodo, updateNewTodo] = useState('')
   const handleDone = (event, idx) => {
     updateTodos(prevTodos.map((todo, index) => {
@@ -24,6 +26,7 @@ function Tasks() {
     }))
   }
 
+  // this handles adding new tasks
   const addTodo = (e) => {
     e.preventDefault()
     updateTodos(prevTodos => {

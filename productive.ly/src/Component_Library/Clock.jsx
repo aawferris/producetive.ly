@@ -9,6 +9,7 @@ class Clock extends Component {
     this.state = {date: new Date()};
   }
 
+  // makes the clock tick each second
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
@@ -26,6 +27,7 @@ class Clock extends Component {
     });
   }
 
+  // leverages JS method to call the local time from the user's computer
   render() {
     return (
       <div className='clock'>
