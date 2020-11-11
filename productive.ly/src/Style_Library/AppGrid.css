@@ -39,6 +39,10 @@ footer {
   font-size: 48px;
 }
 
+#welcome-header {
+  font-size: 48px;
+}
+
 article {
   grid-area: article;
 }

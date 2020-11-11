@@ -23,7 +23,6 @@ function WelcomePost(props) {
     props.setRefresh(!props.refresh)
   }
 
-
   return (
     <div className='welcome-container'>
       <form onSubmit={handleSubmit}>
